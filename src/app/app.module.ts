@@ -21,6 +21,11 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState } from './app.service';
 import { HomeComponent } from './home';
 import { HeaderComponent } from './common/header';
+import { BreadcrumbsComponent } from './common/breadcrumbs';
+import { CustomButtonComponent } from './common/customButton';
+import { FooterComponent } from './common/footer';
+import { LogoComponent } from './common/logo';
+import { SearchComponent } from './common/search';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -39,6 +44,11 @@ const APP_PROVIDERS = [
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
+    LogoComponent,
+    SearchComponent,
+    CustomButtonComponent,
+    BreadcrumbsComponent,
     HomeComponent
   ],
   imports: [ // import Angular's modules

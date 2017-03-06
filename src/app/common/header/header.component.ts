@@ -5,7 +5,9 @@ import {
 @Component({
   selector: 'header',
   template: `
-    <span>Header</span>
+    <div>
+      <logo></logo><breadcrumbs></breadcrumbs>
+    </div>
   `
 })
 export class HeaderComponent  {
