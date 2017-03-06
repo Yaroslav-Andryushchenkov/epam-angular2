@@ -26,6 +26,9 @@ import { CustomButtonComponent } from './common/customButton';
 import { FooterComponent } from './common/footer';
 import { LogoComponent } from './common/logo';
 import { SearchComponent } from './common/search';
+import { LoginComponent } from './login';
+import { CoursesComponent } from './courses';
+import { CourseDetailesComponent } from './courses/courseDetailes';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -49,7 +52,10 @@ const APP_PROVIDERS = [
     SearchComponent,
     CustomButtonComponent,
     BreadcrumbsComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    CoursesComponent,
+    CourseDetailesComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
