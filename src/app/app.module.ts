@@ -27,6 +27,7 @@ import { FooterComponent } from './common/footer';
 import { LogoComponent } from './common/logo';
 import { SearchComponent } from './common/search';
 import { LoginComponent } from './login';
+import { LoginLinksComponent } from './login';
 import { CoursesComponent } from './courses';
 import { CourseDetailesComponent } from './courses/courseDetailes';
 
@@ -54,6 +55,7 @@ const APP_PROVIDERS = [
     BreadcrumbsComponent,
     HomeComponent,
     LoginComponent,
+    LoginLinksComponent,
     CoursesComponent,
     CourseDetailesComponent
   ],

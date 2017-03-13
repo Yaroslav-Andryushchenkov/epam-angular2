@@ -5,8 +5,10 @@ import {
 @Component({
   selector: 'header',
   template: `
-    <div>
-      <logo></logo><breadcrumbs></breadcrumbs>
+    <div class="row">
+      <logo class="col-sm-2"></logo>
+      <breadcrumbs class="col-sm-7"></breadcrumbs>
+      <login-links class="col-sm-3"></login-links>
     </div>
   `
 })

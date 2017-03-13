@@ -5,7 +5,7 @@ import {
 @Component({
   selector: 'breadcrumbs',
   template: `
-    <span>breadcurmbs....</span>
+    <span class="align-middle">breadcurmbs....</span>
   `
 })
 export class BreadcrumbsComponent  {
