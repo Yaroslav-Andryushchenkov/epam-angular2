@@ -2,7 +2,10 @@
 /* This file is for setting global styles  */
 @import 'variables';
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import 'home';
 @import 'header';
+@import 'search';
+@import 'login-links';
 
 nav {
   margin-top: 16px;

@@ -22,7 +22,7 @@ import { AppState } from './app.service';
 import { HomeComponent } from './home';
 import { HeaderComponent } from './common/header';
 import { BreadcrumbsComponent } from './common/breadcrumbs';
-import { CustomButtonComponent } from './common/customButton';
+import { ToolBoxComponent } from './common/toolBox';
 import { FooterComponent } from './common/footer';
 import { LogoComponent } from './common/logo';
 import { SearchComponent } from './common/search';
@@ -51,7 +51,7 @@ const APP_PROVIDERS = [
     FooterComponent,
     LogoComponent,
     SearchComponent,
-    CustomButtonComponent,
+    ToolBoxComponent,
     BreadcrumbsComponent,
     HomeComponent,
     LoginComponent,
