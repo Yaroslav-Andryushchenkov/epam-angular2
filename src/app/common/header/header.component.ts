@@ -6,8 +6,8 @@ import {
   selector: 'header',
   template: `
     <div class="row">
-      <logo class="col-sm-2"></logo>
-      <breadcrumbs class="col-sm-7"></breadcrumbs>
+      <logo class="col-md-2 col-sm-4"></logo>
+      <breadcrumbs class="col-md-7 col-sm-5"></breadcrumbs>
       <login-links class="col-sm-3 text-right"></login-links>
     </div>
   `

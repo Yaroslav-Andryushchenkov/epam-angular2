@@ -5,7 +5,7 @@ import {
 @Component({
   selector: 'footer',
   template: `
-    <div>Footer text ...</div>
+    <div class="text-center">Copyright 2014</div>
   `
 })
 export class FooterComponent  {

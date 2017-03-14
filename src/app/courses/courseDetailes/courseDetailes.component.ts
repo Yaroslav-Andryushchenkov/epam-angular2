@@ -1,5 +1,8 @@
 import {
-  Component
+  Component,
+  Input,
+  Output,
+  EventEmitter
 } from '@angular/core';
 
 import {
@@ -8,23 +11,16 @@ import {
 
 @Component({
   selector: 'course-detailes',
-  template: `
-    <div>
-    course detailes block
-    </div>
-  `
+  templateUrl: './courseDetailes.component.html'
 })
-export class CourseDetailesComponent implements CourseDetailesInterface {
-  public readonly id: string;
-  public name: string;
-  public description: string;
-  public duration: number;
-  public publishDate: Date;
+export class CourseDetailesComponent {
+  @Input('course') courseData: CourseDetailesInterface;
+  @Output('delete') deleteEvent = new EventEmitter();
   constructor() {
-      this.id = Date.now().toString();
-      this.name = 'first test course';
-      this.duration = 0;
-      this.publishDate = null;
-      this.description = '';
+    this.courseData = null;
+  }
+
+  public onDelete() {
+    this.deleteEvent.emit({id: this.courseData.id});
   }
 }
