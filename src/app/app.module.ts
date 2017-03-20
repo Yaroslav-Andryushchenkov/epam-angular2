@@ -30,6 +30,7 @@ import { LoginComponent } from './login';
 import { LoginLinksComponent } from './login';
 import { CoursesComponent } from './courses';
 import { CourseDetailesComponent } from './courses/courseDetailes';
+import { CourseService } from './courses';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -65,9 +66,10 @@ const APP_PROVIDERS = [
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
-  providers: [ // expose our Services and Providers into Angular's dependency injection
+  providers: [
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    CourseService
   ]
 })
 export class AppModule {

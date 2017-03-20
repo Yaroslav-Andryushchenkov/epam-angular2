@@ -2,7 +2,7 @@ import {
   Component,
   OnInit
 } from '@angular/core';
-import { CourseDetailesInterface } from './';
+import { CourseDetailesInterface, CourseService } from './';
 
 @Component({
   selector: 'courses',
@@ -15,39 +15,17 @@ import { CourseDetailesInterface } from './';
   `
 })
 export class CoursesComponent implements OnInit {
-  public courses: [CourseDetailesInterface];
-  constructor() {
+  public courses: CourseDetailesInterface[];
+  constructor(private courseService: CourseService) {
     this.courses = null;
   }
   public ngOnInit() {
-    this.courses = [{
-      id: '1',
-      name: 'First course',
-      description: 'Description of first course',
-      duration: 11,
-      publishDate: new Date()
-      },
-      {
-        id: '2',
-        name: 'Second course',
-        description: 'Description of second course',
-        duration: 12,
-        publishDate: new Date()
-      },
-      {
-        id: '3',
-        name: 'Third course',
-        description: 'Description of third course',
-        duration: 17,
-        publishDate: new Date()
-      },
-    ];
+    this.courses = this.courseService.getList();
     this.courses.forEach((c) => console.log(c.id));
   }
 
   public deleteCourse(c) {
-    this.courses = this.courses.filter((currentValue, index, array) => {
-      return currentValue.id !== c.id;
-    });
+    this.courseService.remove(c.id);
+    this.courses = this.courseService.getList();
   }
 }
