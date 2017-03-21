@@ -25,7 +25,9 @@ export class CoursesComponent implements OnInit {
   }
 
   public deleteCourse(c) {
-    this.courseService.remove(c.id);
-    this.courses = this.courseService.getList();
+    if (confirm('Do you really want to delete this course')) {
+      this.courseService.remove(c.id);
+      this.courses = this.courseService.getList();
+    }
   }
 }
