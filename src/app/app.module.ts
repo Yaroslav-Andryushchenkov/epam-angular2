@@ -31,6 +31,7 @@ import { LoginLinksComponent } from './login';
 import { CoursesComponent } from './courses';
 import { CourseDetailesComponent } from './courses/courseDetailes';
 import { CourseService } from './courses';
+import { LoginService } from './login';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -69,7 +70,8 @@ const APP_PROVIDERS = [
   providers: [
     ENV_PROVIDERS,
     APP_PROVIDERS,
-    CourseService
+    CourseService,
+    LoginService,
   ]
 })
 export class AppModule {
