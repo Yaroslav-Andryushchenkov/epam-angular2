@@ -6,7 +6,7 @@ export class LoginService {
   private readonly STORAGE_NAME: string = 'login_storage';
   constructor() {
     this.currentUserToken = null;
-    let storageString = localStorage.getItem(this.STORAGE_NAME
+    let storageString = localStorage.getItem(this.STORAGE_NAME);
     if (storageString) {
       let tokens = Object.keys(JSON.parse(storageString));
       if (tokens.length > 0) {
