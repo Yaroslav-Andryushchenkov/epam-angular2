@@ -10,7 +10,7 @@ import {
   template: `
     <div class="row">
       <logo class="col-md-2 col-sm-4"></logo>
-      <breadcrumbs *ngIf="isAuth" class="col-md-7 col-sm-5"></breadcrumbs>
+      <div class="col-md-7 col-sm-5"><breadcrumbs *ngIf="isAuth"></breadcrumbs></div>
       <login-links class="col-sm-3 text-right"></login-links>
     </div>
   `

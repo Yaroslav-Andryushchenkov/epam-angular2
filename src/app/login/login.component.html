@@ -1,4 +1,12 @@
-<div>
-  <input [(ngModel)]="login" type="text"/>
-  <button (click)="onLogin()" class="btn btn-primary">Log in</button>
+<div class="container">
+  <header></header>
+
+  <div class="row">
+    <div class="center-block login-block">
+      <label><b>Username</b></label>
+      <input [(ngModel)]="login" type="text"/>
+      <button (click)="onLogin()" class="btn btn-primary">Log in</button>
+    </div>
+  </div>
+  <footer></footer>
 </div>

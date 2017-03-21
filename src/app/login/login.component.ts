@@ -16,6 +16,6 @@ export class LoginComponent {
   }
   public onLogin() {
     this.loginService.currentUserToken = this.loginService.login(this.login);
-    alert('user ' + this.login + ' has successfully logged in');
+    window.location.href = '/home';
   }
 }

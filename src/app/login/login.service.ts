@@ -25,7 +25,7 @@ export class LoginService {
     return token;
   }
   public logout() {
-    localStorage.removeItem(this.STORAGE_NAME);
+    localStorage.setItem(this.STORAGE_NAME, JSON.stringify({}));
   }
   public isAuthecated(token): boolean {
     let storage = this.getStorage();
