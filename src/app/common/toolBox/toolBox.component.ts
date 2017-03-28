@@ -1,9 +1,11 @@
 import {
-  Component
+  Component,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 @Component({
   selector: 'tool-box',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
   <div class="row">
      <search class="col-sm-8"></search>

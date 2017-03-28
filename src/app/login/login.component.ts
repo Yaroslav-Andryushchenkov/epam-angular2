@@ -1,5 +1,6 @@
 import {
-  Component
+  Component,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {
   LoginService
@@ -7,6 +8,7 @@ import {
 
 @Component({
   selector: 'login',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: 'login.component.html'
 })
 export class LoginComponent {

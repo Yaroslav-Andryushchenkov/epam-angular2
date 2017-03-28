@@ -1,17 +1,18 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import { CourseDetailesInterface, CourseService } from './';
 
 @Component({
   selector: 'courses',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <course-detailes *ngFor="let item of courses; let id = index" 
     course-detailes [course]="item"
     (delete)="deleteCourse($event)" >
     </course-detailes>
-
   `
 })
 export class CoursesComponent implements OnInit {

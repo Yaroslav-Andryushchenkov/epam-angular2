@@ -2,7 +2,8 @@ import {
   Component,
   Input,
   Output,
-  EventEmitter
+  EventEmitter,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 import {
@@ -11,7 +12,8 @@ import {
 
 @Component({
   selector: 'course-detailes',
-  templateUrl: './courseDetailes.component.html'
+  templateUrl: './courseDetailes.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CourseDetailesComponent {
   @Input('course') courseData: CourseDetailesInterface;

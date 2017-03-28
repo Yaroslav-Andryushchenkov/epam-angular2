@@ -1,9 +1,11 @@
 import {
-  Component
+  Component,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 @Component({
   selector: 'search',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <input [(ngModel)]="searchRequest" type="text"/>
     <button (click)="onFind()" class="btn btn-primary">Find</button>

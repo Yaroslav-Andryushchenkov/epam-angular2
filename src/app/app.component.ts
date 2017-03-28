@@ -4,7 +4,8 @@
 import {
   Component,
   OnInit,
-  ViewEncapsulation
+  ViewEncapsulation,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import { AppState } from './app.service';
 
@@ -14,6 +15,7 @@ import { AppState } from './app.service';
  */
 @Component({
   selector: 'app',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
     './app.component.css'
