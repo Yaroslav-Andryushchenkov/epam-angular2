@@ -11,7 +11,7 @@ import { CourseDetailesInterface, CourseService } from './';
   template: `
     <course-detailes *ngFor="let item of courses; let id = index" 
     course-detailes [course]="item"
-    (delete)="deleteCourse($event)" >
+    (delete)="deleteCourse($event)">
     </course-detailes>
   `
 })
