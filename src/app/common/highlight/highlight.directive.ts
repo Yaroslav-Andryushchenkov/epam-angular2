@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostListener Input, OnInit } from '@angular/core
 })
 
 export class HighlightDirective implements OnInit {
-  @Input('color') highlightColor: string;
+  @Input('highlight') highlightColor: string;
   constructor(private el: ElementRef) {
   }
   public ngOnInit() {

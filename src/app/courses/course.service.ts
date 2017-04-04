@@ -10,21 +10,21 @@ export class CourseService {
         name: 'First course',
         description: 'Description of first course',
         duration: 11,
-        publishDate: new Date()
+        publishDate: new Date(Date.now() - 10 * 24 * 3600000)
       },
       {
         id: '2',
         name: 'Second course',
         description: 'Description of second course',
         duration: 12,
-        publishDate: new Date()
+        publishDate: new Date(Date.now() - 20 * 24 * 3600000)
       },
       {
         id: '3',
         name: 'Third course',
         description: 'Description of third course',
         duration: 17,
-        publishDate: new Date()
+        publishDate: new Date(Date.now() + 10 * 24 * 3600000)
       },
     ];
   }
