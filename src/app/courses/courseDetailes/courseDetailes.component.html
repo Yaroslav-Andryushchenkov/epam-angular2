@@ -2,7 +2,7 @@
   <div class="col-sm-9">
     <div class="row">
       <div class="col-sm-4">
-        {{courseData.name}}
+        {{courseData.name | uppercase}}
       </div>
       <div class="col-sm-4">
         {{courseData.duration}} min | <span *ngIf="courseData.topRated" class="glyphicon glyphicon-star" aria-hidden="true"></span>
