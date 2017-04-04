@@ -9,7 +9,7 @@ export class HighlightDirective implements OnInit {
   constructor(private el: ElementRef) {
   }
   public ngOnInit() {
-    if (this.highlightColor[0]) {
+    if (this.highlightColor) {
       this.el.nativeElement.style.borderColor = this.highlightColor;
       this.el.nativeElement.style.borderWidth = '2px';
       this.el.nativeElement.style.borderStyle = 'solid';
