@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnInit } from '@angular/core';
+import { Directive, ElementRef, HostListener Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[highlight]'
@@ -7,6 +7,10 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 export class HighlightDirective implements OnInit {
   @Input('color') highlightColor: string;
   constructor(private el: ElementRef) {
-    this.el.nativeElement.style.backgroundColor = 'yellow';//this.highlightColor;
+  }
+  public ngOnInit() {
+    this.el.nativeElement.style.backgroundColor = this.highlightColor;
   }
 }
+
+
