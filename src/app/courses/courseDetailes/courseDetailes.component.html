@@ -8,7 +8,7 @@
         {{courseData.duration | formatDuration}} | <span *ngIf="courseData.topRated" class="glyphicon glyphicon-star" aria-hidden="true"></span>
       </div>
       <div class="col-sm-4 text-right">
-        {{courseData.publishDate}}
+        {{courseData.publishDate | date:'d/m/y'}}
       </div>
     </div>
     <div class="row">
