@@ -1,11 +1,11 @@
-<div class="row" [highlight]="[highlightColor]">
+<div class="row" [highlight]="[highlightColor]" [ngClass]="{top : courseData.topRated}">
   <div class="col-sm-9">
     <div class="row">
       <div class="col-sm-4">
         {{courseData.name}}
       </div>
       <div class="col-sm-4">
-        {{courseData.duration}} min
+        {{courseData.duration}} min | <span *ngIf="courseData.topRated" class="glyphicon glyphicon-star" aria-hidden="true"></span>
       </div>
       <div class="col-sm-4 text-right">
         {{courseData.publishDate}}

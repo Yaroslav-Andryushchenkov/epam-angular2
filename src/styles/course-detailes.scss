@@ -6,3 +6,13 @@
     width: 50%;
   }
 }
+
+.glyphicon-star {
+  &:before {
+    color: yellow;
+  }
+}
+
+.top {
+  background-color: pink;
+}

@@ -8,5 +8,6 @@ export interface CourseDetailesInterface {
   description?: string;
   duration: number;
   publishDate: Date;
+  topRated: boolean;
 
 }
