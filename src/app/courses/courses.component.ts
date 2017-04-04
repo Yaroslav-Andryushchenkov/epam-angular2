@@ -13,7 +13,7 @@ import { CourseDetailesInterface, CourseService } from './';
     course-detailes [course]="item"
     (delete)="deleteCourse($event)">
     </course-detailes>
-    <div class="text-center no-data" *ngIf="!!courses || courses.length == 0"> 
+    <div class="text-center no-data" *ngIf="!courses || courses.length == 0"> 
       No Data. Feel free to add new course 
     </div>
   `
