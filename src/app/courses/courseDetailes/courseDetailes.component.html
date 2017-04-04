@@ -5,7 +5,7 @@
         {{courseData.name | uppercase}}
       </div>
       <div class="col-sm-4">
-        {{courseData.duration}} min | <span *ngIf="courseData.topRated" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        {{courseData.duration | formatDuration}} | <span *ngIf="courseData.topRated" class="glyphicon glyphicon-star" aria-hidden="true"></span>
       </div>
       <div class="col-sm-4 text-right">
         {{courseData.publishDate}}

@@ -33,6 +33,7 @@ import { CourseDetailesComponent } from './courses/courseDetailes';
 import { CourseService } from './courses';
 import { LoginService } from './login';
 import { HighlightDirective } from './common/highlight';
+import { FormatDurationPipe } from './common/formatDuration';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -61,7 +62,8 @@ const APP_PROVIDERS = [
     LoginLinksComponent,
     CoursesComponent,
     CourseDetailesComponent,
-    HighlightDirective
+    HighlightDirective,
+    FormatDurationPipe
   ],
   imports: [ // import Angular's modules
     BrowserModule,

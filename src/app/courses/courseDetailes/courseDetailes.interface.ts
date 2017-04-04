@@ -9,5 +9,4 @@ export interface CourseDetailesInterface {
   duration: number;
   publishDate: Date;
   topRated: boolean;
-
 }

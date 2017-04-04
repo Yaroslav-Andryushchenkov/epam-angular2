@@ -17,7 +17,7 @@ export class CourseService {
         id: '2',
         name: 'Second course',
         description: 'Description of second course',
-        duration: 12,
+        duration: 122,
         publishDate: new Date(Date.now() - 20 * 24 * 3600000),
         topRated: true
       },
@@ -25,7 +25,7 @@ export class CourseService {
         id: '3',
         name: 'Third course',
         description: 'Description of third course',
-        duration: 17,
+        duration: 345,
         publishDate: new Date(Date.now() + 10 * 24 * 3600000),
         topRated: false
       },
